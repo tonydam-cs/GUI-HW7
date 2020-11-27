@@ -1,0 +1,151 @@
+/*
+ Name: Tony Dam
+ Email: tony_dam@student.uml.edu
+ Affiliation: Junior Student at UMass Lowell in COMP.4610-201
+              91.61 GUI Programming I
+Date created: 11/23/20
+
+Sources from: W3Schools, Stackoverflow, Youtube, JSFiddle
+and https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient
+
+Website was created for personal use. Creates a dynamic interactive
+table for users to generate a multiplication table of any length of
+their choosing.
+Copyright (c) November 23rd, 2020 Tony Dam. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to
+author.
+*/
+body {
+  /* code from here: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient */
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 20%;
+  font-size: 20px;
+  background-color: white;
+}
+
+#inputs {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  font-size: 13px;
+  background-color: white;
+}
+
+input {
+  text-align: center;
+  padding-left: 1em;
+}
+
+#min-input-col {
+  padding: 15px 0px 0px 0px;
+}
+#max-input-col {
+  padding: 15px 0px 0px 0px;
+}
+
+#min-input-row {
+  padding: 15px 0px 0px 0px;
+}
+
+#max-input-row {
+  padding: 15px 0px 25px 0px;
+}
+
+#Updates {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 10%;
+    background-color: #E04747;
+}
+
+#multiTable{
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+  font-size: 13pt;
+}
+td{
+  border:5px coral;
+  text-align: center;
+  background-color: #B98FE8;
+}
+
+td:hover {
+  background-color: aquamarine;
+}
+
+/*https://www.w3.org/wiki/CSS/Selectors/pseudo-classes/:first-child*/
+td:first-child{
+  background-color: #EAACA6;
+}
+
+/*the first row coloring*/
+tr:first-child > td{
+  background-color: #A6C0ED;
+}
+
+td:nth-child(even) {
+  background-color: #9C72CC;
+}
+td:nth-child(even):hover {
+  background-color: aquamarine;
+}
+/*to make the left corner invisble*/
+tr:first-child > td:first-child {
+  opacity:0.0;
+}
+
+#submit-button {
+  font-size: 12px;
+} 
+
+.errmsg {
+  color: rgb(175, 35, 35);
+}
+
+.sliders
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+ .container {
+    margin-top: 10px;
+}
+
+.nav-tabs {
+  background-color: white;
+}
+
+.nav-tabs > li {
+    position:relative;
+}
+.nav-tabs > li > a {
+    display:inline-block;
+}
+.nav-tabs > li > span {
+    display:none;
+    cursor:pointer;
+    position:absolute;
+    right: 6px;
+    top: 8px;
+    color: red;
+}
+.nav-tabs > li:hover > span {
+    display: inline-block;
+}
