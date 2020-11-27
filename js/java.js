@@ -62,6 +62,9 @@ $(document).ready(function() {
   }
   });
 });
+
+
+
 var input1 = document.querySelector('#input1');
 var input2 = document.querySelector('#input2');
 var input3 = document.querySelector('#input3');
