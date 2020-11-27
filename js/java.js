@@ -63,7 +63,10 @@ $(document).ready(function() {
   });
 });
 
-
+$("#input1").val(2);
+$("#input2").val(0);
+$("#input3").val(4);
+$("#input4").val(8);
 
 var input1 = document.querySelector('#input1');
 var input2 = document.querySelector('#input2');
